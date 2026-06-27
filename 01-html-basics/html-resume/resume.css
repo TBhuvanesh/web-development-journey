@@ -1,0 +1,28 @@
+#header{
+    height:80px;
+    /* border:1px solid black; */
+}
+#image{
+    width:80px; 
+    display: inline-block;
+    vertical-align: middle;
+}
+#top{
+    margin: 0;
+    margin-left: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    letter-spacing: 10px;
+}
+#details {
+    display: block;
+    margin-left: 720px;  
+    margin-top: -45px;
+}
+#details a {
+    display: block;
+    font-size: 14px;
+}
+.subtitles{
+    letter-spacing: 5px;
+}
