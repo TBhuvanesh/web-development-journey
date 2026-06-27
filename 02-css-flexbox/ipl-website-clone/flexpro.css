@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=BBH+Bogle&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+body{
+    margin:0px;
+}
+#header{
+    background-color: #061e59;
+    display: flex;
+    height: 39px;
+    align-items: center;
+    padding-top: .5rem !important;
+    padding-bottom: .5rem !important;
+    justify-content: space-between;
+    padding-left:150px;
+    padding-right:150px;
+}
+.header1{
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+#h1p{
+    color: white;
+    margin-left: 10px;
+    font:16px "Work Sans", sans-serif;
+}
+.header2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 280px;
+}
+#iplheader{
+    background-color: #19398a;
+    height:73px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: url(https://documents.iplt20.com/ipl/assets/images/rounded_spiral-header.png);
+    background-repeat: no-repeat;
+    background-size: 21% auto;
+    background-position: bottom 0 left -60px;
+}
+
+.iplheadtext{
+    margin-left:50px;
+    color: white;
+    width:1000px;
+    font: 18px  "Open Sans", sans-serif;
+    font-weight: 500;
+    display: flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+#iplheadicons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 200px;
+}
+#herodiv{
+    background-color: #031945;
+    height:600px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://documents.iplt20.com/ipl/assets/images/rounded_spiral-teams-logo-cover-img.png);
+    background-repeat: no-repeat;
+    background-position: -30px 130px;
+}
+#herohead{
+    background-color: #061E59;
+    height:40px;
+    padding-left: 150px;
+    display: flex;
+    align-items: center;
+}
+#heroteamshead{
+    display: flex;
+    padding:10px;
+    padding-top: 40px;
+    justify-content: center;
+}
+.heroteam{
+    display: flex;
+    justify-content: center;
+    background-color:  #031537;
+    width:140px;    
+    /* height:140px; */
+    margin-left: 30px;
+    border-radius: 15%;
+}
+#herobody{
+    display: flex;
+    width:90%;
+    justify-content: space-evenly;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    /* border:1px solid red; */
+    height:300px;
+    /* margin-left: 150px;
+    margin-right: 150px; */
+}
+#herobody1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+}
+.v-line{
+    border-left: 2px solid white;
+    margin-top: 32px;
+    height: 200px;
+    margin-right: 30px;
+    opacity: 0.3;
+}
+#herobody2{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    /* align-items: center; */
+    align-items: left;
+}
+.official-team-site {
+    background: #ef4123;
+    padding: 4px 16px;
+    transform: skew(-18deg);
+    display: flex;
+    color: #fff;
+    width: 200px;
+    height: 38px;
+    margin-top: 20px;
+    margin-left: -100px;
+    font-family: 'Open Sans', sans-serif;
+}
+.herobodyp {
+    /* margin-left: -470px; */
+    padding: 36px 15px 8px 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -25px;
+    margin-bottom: 20px;
+    font: 18px  "Open Sans", sans-serif;
+    border-bottom: 2px solid #031945;
+    color: #fff;
+    letter-spacing: 1px;
+    /* align-items: center; */
+    justify-content: center;
+    width: 600px;
+}
+.pbody{
+    border: 2px solid #031945;
+    background-color: #1b2d5b;
+    padding-left: 15px;
+    height:60px;
+    width:600px;
+    font-size: 17px;
+}
+#one,#two{
+    border-radius: 0%;
+}
+#three{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#four{
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.para{
+    white-space: pre;
+}
+#error{
+    display: flex;
+    width:500px;
+    align-items: center;
+    color:rgba(17 20 28 / 60%);
+    background-color: #fff;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+    border-radius: 15px;
+    margin-bottom: 0px;
+}
+.cardsmain{
+    display: flex;
+    flex-direction: column;
+    background-color: #f0f2f8;
+    width: 100%;
+    margin-top: -30px;
+    height: 3000px;
+    background-image: url(https://documents.iplt20.com/ipl/assets/images/rounded_spiral-bottom-section-bg.png);
+    background-repeat: repeat-y;
+    background-size: 120%;
+    background-position: center top;
+
+}
+.players{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 24px;
+    height: 330px;
+}
+.year-box{
+    display: flex; 
+    align-items: center;
+    justify-content: space-around;
+    border: 1px solid black;
+    margin-right: 30px;
+    width:250px;
+    height:40px;
+    background-color: white;
+    opacity: 0.7;
+    
+}
+.player-box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    /* align-items: center;
+    justify-content: center; */
+}
+.player-card{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    margin-bottom: 70px;
+}
+.player-card-line{
+    border: 1px solid black;
+    width:100%;
+    opacity: 0.3;
+}
+.player-image-div{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.specific-icon{
+    margin-top: -160px;
+    width:30px;
+    margin-right: 20px;
+}
+.specific-icon-foreign{
+    margin-top: -160px;
+    width:50px;
+    margin-left: 10px;
+    margin-right:-40px;
+}
+.player{
+    width:80%;
+    margin-left: 20px;
+}
+.pname{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: -10px;
+}
+.specific{
+    opacity: 0.5;
+    margin-top: -10px;
+}
+#sponsers{
+    background-color: #081e40;
+    height:200px;
+    margin-top: -50px;
+    padding: 0 90px;
+    display: flex;
+}
+#credits{
+    background-color: #11141C;
+    height: 750px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    /* display: flex;
+    justify-content: space-evenly; */
+    padding-top: 50px;
+}
+#copyright{
+    background-color: black;
+    color: white;
+    height: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    opacity: 2;
+    font-family: 'Open Sans', sans-serif;
+}
