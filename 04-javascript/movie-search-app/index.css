@@ -1,0 +1,54 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.movie-card {
+  min-width: 260px;
+  max-width: 260px;
+}
+
+.movie-card .card {
+  height: 100%;
+  background-color: #1c1c1c;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-card img {
+  height: 360px;
+  width:100%;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;   
+  height: 120px;        
+}
+
+.card-title {
+  font-size: 15px;
+  height: 40px;        
+  overflow: hidden;
+}
+
+.card-body button {
+  width: 100%;
+}
+
+#bookmarkContainer,
+#recentContainer {
+  overflow-x: auto;
+}
+
+#bookmarkContainer::-webkit-scrollbar,
+#recentContainer::-webkit-scrollbar {
+  display: none;
+}
+
+
+
