@@ -1,0 +1,54 @@
+.search-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top right, rgba(228, 9, 20, 0.16), transparent 32rem),
+    #07080d;
+}
+
+.search-page__content {
+  min-height: 72vh;
+  padding: 8rem 4% 3rem;
+}
+
+.search-page__eyebrow {
+  margin: 0 0 0.5rem;
+  color: #e50914;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+.search-page h1 {
+  margin: 0 0 1.5rem;
+  color: #ffffff;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+}
+
+.search-page__message {
+  margin: 0 0 1.5rem;
+  color: #d6d9e0;
+  font-weight: 700;
+}
+
+.search-page__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10.5rem, 1fr));
+  gap: 1.3rem;
+}
+
+.search-page__grid .movie-card {
+  width: 100%;
+  flex: none;
+}
+
+@media (max-width: 640px) {
+  .search-page__content {
+    padding: 9rem 1rem 2.5rem;
+  }
+
+  .search-page__grid {
+    grid-template-columns: repeat(auto-fill, minmax(8.8rem, 1fr));
+    gap: 1rem;
+  }
+}

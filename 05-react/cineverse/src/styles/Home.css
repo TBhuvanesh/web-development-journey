@@ -1,0 +1,29 @@
+.home {
+  min-height: 100vh;
+  overflow-x: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(228, 9, 20, 0.16), transparent 32rem),
+    #07080d;
+}
+
+.home__rows {
+  padding: 2rem 0 3rem;
+}
+
+.home__error {
+  max-width: 58rem;
+  margin: 0 auto 1rem;
+  padding: 1rem 4%;
+  color: #fecaca;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .home__rows {
+    padding-top: 1rem;
+  }
+
+  .home__error {
+    padding-inline: 1rem;
+  }
+}

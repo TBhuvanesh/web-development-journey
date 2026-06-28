@@ -1,0 +1,122 @@
+.footer {
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
+  padding: 3rem 4% 1.4rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(circle at top, rgba(229, 9, 20, 0.13), transparent 28rem),
+    linear-gradient(180deg, rgba(18, 20, 29, 0.86), rgba(5, 6, 10, 0.98)),
+    #05060a;
+  color: #9ca3af;
+  text-align: center;
+  backdrop-filter: blur(16px);
+}
+
+.footer__content {
+  display: grid;
+  justify-items: center;
+  gap: 1rem;
+  width: min(42rem, 100%);
+}
+
+.footer__brand {
+  color: #e50914;
+  font-size: 1.85rem;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.footer__tagline {
+  max-width: 34rem;
+  margin: 0;
+  color: #d1d5db;
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.footer__actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.footer__badge,
+.footer__github {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.4rem;
+  border-radius: 999px;
+  padding: 0.55rem 0.9rem;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.footer__badge {
+  border: 1px solid rgba(229, 9, 20, 0.28);
+  background: rgba(229, 9, 20, 0.08);
+  color: #f3f4f6;
+}
+
+.footer__github {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  transition:
+    border-color 0.22s ease,
+    background-color 0.22s ease,
+    color 0.22s ease,
+    transform 0.22s ease;
+}
+
+.footer__github:hover {
+  border-color: rgba(229, 9, 20, 0.72);
+  background: rgba(229, 9, 20, 0.14);
+  color: #ffffff;
+  transform: translateY(-0.18rem);
+}
+
+.footer__credit,
+.footer__copyright {
+  margin: 0;
+}
+
+.footer__credit {
+  color: #f3f4f6;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.footer__copyright {
+  width: min(42rem, 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1rem;
+  color: #7f8796;
+  font-size: 0.88rem;
+}
+
+@media (max-width: 560px) {
+  .footer {
+    padding: 2.6rem 1rem 1.2rem;
+  }
+
+  .footer__brand {
+    font-size: 1.6rem;
+  }
+
+  .footer__tagline {
+    font-size: 0.95rem;
+  }
+
+  .footer__actions {
+    width: 100%;
+  }
+
+  .footer__badge,
+  .footer__github {
+    width: 100%;
+  }
+}

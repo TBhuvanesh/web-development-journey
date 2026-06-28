@@ -1,0 +1,111 @@
+.movie-card {
+  position: relative;
+  flex: 0 0 11rem;
+  display: block;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  background: #141823;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.28);
+  scroll-snap-align: start;
+  transition:
+    transform 0.24s ease,
+    box-shadow 0.24s ease;
+}
+
+.movie-card:hover {
+  z-index: 2;
+  transform: scale(1.07);
+  box-shadow:
+    0 1.4rem 3rem rgba(0, 0, 0, 0.48),
+    0 0 1.4rem rgba(229, 9, 20, 0.22);
+}
+
+.movie-card:focus-visible {
+  outline: 3px solid #e50914;
+  outline-offset: 4px;
+}
+
+.movie-card__poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  background: #202432;
+}
+
+.movie-card__poster--empty {
+  display: grid;
+  place-items: center;
+}
+
+.movie-card__poster--empty::after {
+  content: "No Poster";
+  color: #8f96a8;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.movie-card__info {
+  position: absolute;
+  inset: auto 0 0;
+  padding: 2.5rem 0.75rem 0.75rem;
+  background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.88));
+}
+
+.movie-card h3 {
+  margin: 0;
+  color: #ffffff;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+.movie-card p {
+  margin: 0.35rem 0 0;
+  color: #f8d568;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.movie-card--skeleton {
+  pointer-events: none;
+}
+
+.movie-card--skeleton .movie-card__poster,
+.movie-card__skeleton-title,
+.movie-card__skeleton-rating {
+  background: linear-gradient(90deg, #171b25 0%, #252b38 48%, #171b25 100%);
+  background-size: 220% 100%;
+  animation: skeleton-pulse 1.4s ease-in-out infinite;
+}
+
+.movie-card__skeleton-title {
+  width: 82%;
+  height: 0.95rem;
+  border-radius: 999px;
+}
+
+.movie-card__skeleton-rating {
+  width: 42%;
+  height: 0.75rem;
+  margin-top: 0.55rem;
+  border-radius: 999px;
+}
+
+@keyframes skeleton-pulse {
+  0% {
+    background-position: 120% 0;
+  }
+
+  100% {
+    background-position: -120% 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .movie-card {
+    flex-basis: 8.8rem;
+  }
+
+  .movie-card h3 {
+    font-size: 0.82rem;
+  }
+}

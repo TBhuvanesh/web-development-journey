@@ -1,0 +1,47 @@
+.movie-row {
+  padding: 1.2rem 0 1.7rem;
+}
+
+.movie-row__header {
+  padding: 0 4%;
+}
+
+.movie-row h2 {
+  margin: 0 0 1rem;
+  color: #ffffff;
+  font-size: 1.35rem;
+}
+
+.movie-row__list {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  padding: 0.25rem 4% 1.2rem;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  scrollbar-color: #444856 transparent;
+}
+
+.movie-row__list::-webkit-scrollbar {
+  height: 0.45rem;
+}
+
+.movie-row__list::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: #444856;
+}
+
+@media (max-width: 640px) {
+  .movie-row {
+    padding-block: 0.85rem 1.25rem;
+  }
+
+  .movie-row__header,
+  .movie-row__list {
+    padding-inline: 1rem;
+  }
+
+  .movie-row h2 {
+    font-size: 1.15rem;
+  }
+}
